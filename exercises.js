@@ -89,7 +89,7 @@ function isEven(num) {
 function isOdd(num) {
   //return true if num is false
   //otherwise return false
-  if (!num % 2 === 0) {
+  if (num % 2 === 1) {
     return true;
   } else {
     return false;
@@ -98,12 +98,12 @@ function isOdd(num) {
 
 function square(num) {
   //square num and return the new value
-  return Math.sqrt(num);
+  return num * num;
 }
 
 function cube(num) {
   //cube num and return the new value
-  return Math.pow(num);
+  return Math.pow(num, 3);
 }
 
 function raiseToPower(num, exponent) {
@@ -124,20 +124,19 @@ function roundUp(num) {
 function addExclamationPoint(str) {
   //add an exclamation point to the end of str and return the new string
   //'hello world' -> 'hello world!'
-  return str + "!";
+  return str + '!';
 }
 
 function combineNames(firstName, lastName) {
   //return firstName and lastName combined as one string and separated by a space.
   //'Lambda', 'School' -> 'Lambda School'
-  return firstName + " " + lastName;
+  return firstName + ' ' + lastName;
 }
 
 function getGreeting(name) {
   //Take the name string and concatenate other strings onto it so it takes the following form:
-  //'Sam' -> 'Hello Sam!'
-  var str; 
-  return str + " " + name;
+  //'Sam' -> 'Hello Sam!' 
+  return 'Hello ' + name + '!';
 }
 
 //If you can't remember these area formulas then head over to Google or look at the test code.
@@ -154,7 +153,7 @@ function getTriangleArea(base, height) {
 
 function getCircleArea(radius) {
   //return the rounded area of the circle given the radius
-  return Math.PI * radius * radius;
+  return Math.round(Math.PI * radius * radius);
 }
 
 function getRectangularPrismVolume(length, width, height) {
