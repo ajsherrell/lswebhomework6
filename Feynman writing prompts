@@ -1,0 +1,4 @@
+functions: these create a set a steps to issue a command
+parameters: these are parts of the steps for the command
+arguments: these are what the parameters need to issue the command
+if statements: these are used to test the command
